@@ -1,9 +1,9 @@
 package com.tekcard.dao;
 
-import com.tekcard.app.Vendor;
-import org.springframework.data.jpa.repository.JpaRepository;
+import com.tekcard.entities.Vendor;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 //import org.springframework.stereotype.Repository;
 
 @Repository
-public interface VendorRepository extends JpaRepository<Vendor, Integer> { }
+public interface VendorRepository extends CrudRepository<Vendor, Integer> { }
